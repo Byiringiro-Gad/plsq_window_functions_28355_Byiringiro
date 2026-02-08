@@ -60,6 +60,7 @@ The database consists of **four related tables**:
 
 - `customers` – stores customer information  
 - `branches` – stores pharmacy branch details  
+![](screanshots\tables\branches.png)
 - `medicines` – stores medicine information  
 - `sales` – stores sales transactions  
 
