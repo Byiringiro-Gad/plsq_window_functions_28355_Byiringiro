@@ -59,10 +59,13 @@ The project is considered successful if the following five measurable goals are 
 The database consists of **four related tables**:
 
 - `customers` – stores customer information  
+![](screanshots/tables/customer_table.png)
 - `branches` – stores pharmacy branch details  
-![](screanshots\tables\branches.png)
-- `medicines` – stores medicine information  
+![](screanshots/tables/branches.png)
+- `medicines` – stores medicine information 
+![](screanshots/tables/medicines.png) 
 - `sales` – stores sales transactions  
+![](screanshots/tables/sales_table.png)
 
 Primary and foreign keys are used to maintain data integrity.
 
@@ -114,19 +117,19 @@ The following JOIN types were implemented using the same database schema:
 
 1. **INNER JOIN**  
    Retrieves sales records that have matching customers, medicines, and branches.  
-    ![](screanshots\joins\inner_join.png)
+    ![](screanshots/joins/inner_join.png)
 
 2. **LEFT JOIN**  
    Identifies customers who have never made a purchase.  
-    ![](screanshots\joins\left_join.png)
+    ![](screanshots/joins/left_join.png)
 
 3. **RIGHT JOIN / FULL JOIN**  
    Detects medicines that have not been sold.  
-    ![](screanshots\joins\join_sales_summary.png)
+    ![](screanshots/joins/join_sales_summary.png)
 
 4. **FULL OUTER JOIN**  
    Compares customers and medicines including unmatched records.  
-    ![](screanshots\joins\full_outer_join.png)
+    ![](screanshots/joins/full_outer_join.png)
 
 5. **SELF JOIN**  
    Compares customers within the same branch or region.  
@@ -145,7 +148,7 @@ Functions used:
 - `RANK()`  
 - `DENSE_RANK()`  
 - `PERCENT_RANK()`  
-    ![](screanshots\windows_functions\ranking_functions.png)
+    ![](screanshots/windows_functions/ranking_functions.png)
 Use case: ranking medicines and customers by total sales.
 
 ### 7.2 Aggregate Window Functions
@@ -154,14 +157,14 @@ Functions used:
 - `AVG()`  
 - `MIN()`  
 - `MAX()`  
-    ![](screanshots\windows_functions\aggregate.png)
+    ![](screanshots/windows_functions/aggregate.png)
 Both `ROWS` and `RANGE` frames were applied to calculate running totals and trends.
 
 ### 7.3 Navigation Functions
 Functions used:
 - `LAG()`  
 - `LEAD()`  
-    ![](screanshots\windows_functions\navigation_functions.png)
+    ![](screanshots/windows_functions/navigation_functions.png)
 Used to analyze month-to-month changes in sales.
 
 ### 7.4 Distribution Functions  
