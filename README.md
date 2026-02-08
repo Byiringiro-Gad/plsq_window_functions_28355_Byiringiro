@@ -113,23 +113,23 @@ The following JOIN types were implemented using the same database schema:
 
 1. **INNER JOIN**  
    Retrieves sales records that have matching customers, medicines, and branches.  
-    ![](screanshots\joins\inner_join.png)  
+    ![](screanshots\joins\inner_join.png)
 
 2. **LEFT JOIN**  
    Identifies customers who have never made a purchase.  
-    ![](screanshots\joins\left_join.png)  
+    ![](screanshots\joins\left_join.png)
 
 3. **RIGHT JOIN / FULL JOIN**  
    Detects medicines that have not been sold.  
-    ![](screanshots\joins\join_sales_summary.png)  
+    ![](screanshots\joins\join_sales_summary.png)
 
 4. **FULL OUTER JOIN**  
    Compares customers and medicines including unmatched records.  
-    ![](screanshots\joins\full_outer_join.png)  
+    ![](screanshots\joins\full_outer_join.png)
 
 5. **SELF JOIN**  
    Compares customers within the same branch or region.  
-    ![](screanshots/joins/self_join.png)  
+    ![](screanshots/joins/self_join.png)
 
 Each screenshot is showing the SQL query and its output although some reduced due to the size of PC.
 
