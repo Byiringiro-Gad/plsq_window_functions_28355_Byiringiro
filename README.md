@@ -131,7 +131,7 @@ The following JOIN types were implemented using the same database schema:
    Compares customers within the same branch or region.  
     ![](screanshots/joins/self_join.png)  
 
-Each screenshot shows the SQL query and its output although some reduced due to the size of PC.
+Each screenshot is showing the SQL query and its output although some reduced due to the size of PC.
 
 
 ## 7. Part B — Window Functions Implementation
