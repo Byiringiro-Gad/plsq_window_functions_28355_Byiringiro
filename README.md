@@ -69,7 +69,7 @@ Primary and foreign keys are used to maintain data integrity.
 The ER diagram shows how customers, medicines, branches, and sales are related.
 
 **ER_Diagram**  
-  [](diagrams/ER_Diagram_Pharmacy.png)
+  ![](diagrams/ER_Diagram_Pharmacy.png)
 
 ---
 
@@ -113,23 +113,23 @@ The following JOIN types were implemented using the same database schema:
 
 1. **INNER JOIN**  
    Retrieves sales records that have matching customers, medicines, and branches.  
-    [](screenshots/joins/inner_join.png)  
+    ![](screenshots/joins/inner_join.png)  
 
 2. **LEFT JOIN**  
    Identifies customers who have never made a purchase.  
-    [](screenshots/joins/left_join.png)  
+    ![](screenshots/joins/left_join.png)  
 
 3. **RIGHT JOIN / FULL JOIN**  
    Detects medicines that have not been sold.  
-    [](screenshots/joins/left_join.png)  
+    ![](screenshots/joins/left_join.png)  
 
 4. **FULL OUTER JOIN**  
    Compares customers and medicines including unmatched records.  
-    [](screenshots/joins/full_outer_join.png)  
+    ![](screenshots/joins/full_outer_join.png)  
 
 5. **SELF JOIN**  
    Compares customers within the same branch or region.  
-    [](screenshots/joins/self_join.png)  
+    ![](screenshots/joins/self_join.png)  
 
 Each screenshot shows the SQL query and its output although some reduced due to the size of PC.
 
@@ -144,7 +144,7 @@ Functions used:
 - `RANK()`  
 - `DENSE_RANK()`  
 - `PERCENT_RANK()`  
-    [](screanshots/windows_functions/ranking.png)
+    ![](screanshots/windows_functions/ranking.png)
 Use case: ranking medicines and customers by total sales.
 
 ### 7.2 Aggregate Window Functions
@@ -153,21 +153,21 @@ Functions used:
 - `AVG()`  
 - `MIN()`  
 - `MAX()`  
-    [](screanshots/windows_functions/aggregate.png)
+    ![](screanshots/windows_functions/aggregate.png)
 Both `ROWS` and `RANGE` frames were applied to calculate running totals and trends.
 
 ### 7.3 Navigation Functions
 Functions used:
 - `LAG()`  
 - `LEAD()`  
-    [](screanshots/windows_functions/navigation_functions.png`)
+    ![](screanshots/windows_functions/navigation_functions.png`)
 Used to analyze month-to-month changes in sales.
 
 ### 7.4 Distribution Functions  
 Functions used:
 - `NTILE(4)`  
 - `CUME_DIST()`  
-    [](screanshots/windows_functions/distributions_functions.png)
+    ![](screanshots/windows_functions/distributions_functions.png)
 Used to segment customers based on spending behavior.
 
 ## 8. Results Analysis
