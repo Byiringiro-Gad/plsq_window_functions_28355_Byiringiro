@@ -1,8 +1,8 @@
 # SQL JOINs & Window Functions Project  
 ## Pharmacy Sales Analysis System
 
-**Names:** [BYIRINGIRO Gad]  
-**ID:** [28355]  
+**Names:** BYIRINGIRO Gad 
+**ID:** 28355  
 **Course:** Database Development with PL/SQL (INSY 8311)  
 **Instructor:** Mr. Eric Maniraguha  
 **Institution:** Adventist University of Central Africa (AUCA)  
@@ -17,17 +17,16 @@ The goal of the assignment is to increase practical understanding of SQL JOINs a
 
 All queries were implemented and tested using **Oracle Database 21**, and the results are documented with screenshots.
 
----
 
 ## 2. Business Problem Definition
 
 ### Business Context
 
-**Company:** Pharmacy Sales Analysis System
-**Industry:** Health
-**Department:** Sales Analytics
-**Locations:** different branches in Different districts of Rwanda
-**Operation:** selling medical products
+**Company:** Pharmacy Sales Analysis System  
+**Industry:** Health  
+**Department:** Sales Analytics  
+**Locations:** different branches in Different districts of Rwanda  
+**Operation:** selling medical products  
 
 The pharmacy records daily sales transactions involving customers, medicines, and branches.
 
@@ -42,7 +41,6 @@ The expected outcome is to generate clear analytical insights that help manageme
 - Track sales trends  
 - Support data-driven decisions for inventory and marketing  
 
----
 
 ## 3. Success Criteria
 
@@ -71,68 +69,67 @@ Primary and foreign keys are used to maintain data integrity.
 The ER diagram shows how customers, medicines, branches, and sales are related.
 
 **ER_Diagram**  
-`diagrams/ER_Diagram_Pharmacy.png`
+  [](diagrams/ER_Diagram_Pharmacy.png)
 
 ---
 
 ## 5. Project Folder Structure
-database/
-  ├─ 01_create_tables.sql
-  ├─ 02_insert_customers.sql
-  ├─ 03_insert_branches.sql
-  ├─ 04_insert_medicines.sql
-  ├─ 05_insert_sales.sql
+database/  
+  ├─ 01_create_tables.sql  
+  ├─ 02_insert_customers.sql  
+  ├─ 03_insert_branches.sql  
+  ├─ 04_insert_medicines.sql  
+  ├─ 05_insert_sales.sql  
 
-joins/
-  ├─ inner_join.sql
-  ├─ left_join.sql
-  ├─ right_join.sql
-  ├─ full_outer_join.sql
-  ├─ self_join.sql
+joins/  
+  ├─ inner_join.sql  
+  ├─ left_join.sql 
+  ├─ right_join.sql  
+  ├─ full_outer_join.sql  
+  ├─ self_join.sql  
 
-window_functions/
-  ├─ ranking.sql
-  ├─ aggregate.sql
-  ├─ navigation.sql
-  ├─ distribution.sql
+window_functions/  
+  ├─ ranking.sql  
+  ├─ aggregate.sql  
+  ├─ navigation.sql  
+  ├─ distribution.sql   
 
-diagrams
-  ├─ER_Diagram_pharmacy
-  ├─all_tables_created
+diagrams  
+  ├─ER_Diagram_pharmacy  
+  ├─all_tables_created  
 
-screenshots/
-  ├─ tables/
-  ├─ joins/
-  ├─ functions/
+screenshots/  
+  ├─ tables/  
+  ├─ joins/  
+  ├─ functions/  
 
 README.md
 
 
----
 
 ## 6. Part A — SQL JOINs Implementation
 
 The following JOIN types were implemented using the same database schema:
 
 1. **INNER JOIN**  
-   Retrieves sales records that have matching customers, medicines, and branches.
-    `screenshots/joins/inner_join.png`
+   Retrieves sales records that have matching customers, medicines, and branches.  
+    [](screenshots/joins/inner_join.png)  
 
 2. **LEFT JOIN**  
-   Identifies customers who have never made a purchase.
-    `screenshots/joins/left_join.png`
+   Identifies customers who have never made a purchase.  
+    [](screenshots/joins/left_join.png)  
 
 3. **RIGHT JOIN / FULL JOIN**  
-   Detects medicines that have not been sold.
-    `screenshots/joins/left_join.png`
+   Detects medicines that have not been sold.  
+    [](screenshots/joins/left_join.png)  
 
 4. **FULL OUTER JOIN**  
-   Compares customers and medicines including unmatched records.
-    `screenshots/joins/full_outer_join.png`
+   Compares customers and medicines including unmatched records.  
+    [](screenshots/joins/full_outer_join.png)  
 
 5. **SELF JOIN**  
-   Compares customers within the same branch or region.
-    `screenshots/joins/self_join.png`
+   Compares customers within the same branch or region.  
+    [](screenshots/joins/self_join.png)  
 
 Each screenshot shows the SQL query and its output although some reduced due to the size of PC.
 
@@ -147,7 +144,7 @@ Functions used:
 - `RANK()`  
 - `DENSE_RANK()`  
 - `PERCENT_RANK()`  
-    `screanshots/windows_functions/ranking.png`
+    [](screanshots/windows_functions/ranking.png)
 Use case: ranking medicines and customers by total sales.
 
 ### 7.2 Aggregate Window Functions
@@ -156,36 +153,36 @@ Functions used:
 - `AVG()`  
 - `MIN()`  
 - `MAX()`  
-    `screanshots/windows_functions/aggregate.png`
+    [](screanshots/windows_functions/aggregate.png)
 Both `ROWS` and `RANGE` frames were applied to calculate running totals and trends.
 
 ### 7.3 Navigation Functions
 Functions used:
 - `LAG()`  
 - `LEAD()`  
-    `screanshots/windows_functions/navigation_functions.png`
+    [](screanshots/windows_functions/navigation_functions.png`)
 Used to analyze month-to-month changes in sales.
 
-### 7.4 Distribution Functions
+### 7.4 Distribution Functions  
 Functions used:
 - `NTILE(4)`  
 - `CUME_DIST()`  
-    `screanshots/windows_functions/distributions_functions.png`
+    [](screanshots/windows_functions/distributions_functions.png)
 Used to segment customers based on spending behavior.
 
 ## 8. Results Analysis
 
-### Descriptive Analysis (What Happened?)
+### Descriptive Analysis (What Happened?)  
 - Some branches generated higher sales volumes than others  
 - A small group of customers contributed most of the revenue  
 - Certain medicines were consistently top performers  which can predict a specific disease that is common in a a given region
 
-### Diagnostic Analysis (Why Did It Happen?)
+### Diagnostic Analysis (Why Did It Happen?)  
 - Branch location influenced customer purchase inscrease or dicrease 
 - Frequent customers purchased higher quantities  
 - Seasonal demand affected monthly sales trends  
 
-### Prescriptive Analysis (What Should Be Done?)
+### Prescriptive Analysis (What Should Be Done?)  
 - Increase stock for high-demand medicines  
 - Focus marketing efforts on high-value customers  
 - Monitor underperforming branches and products  
@@ -203,27 +200,25 @@ They are organized as follows:
 - `screenshots/joins/` → JOIN queries and results  
 - `screenshots/window_functions/` → window function outputs  
 
----
+
 
 ## 10. References
 
 - Oracle Documentation – SQL Analytic Functions  
 - Oracle Base – Analytic Functions Guide  
 - W3Schools – SQL Window Functions  
-- Course lecture notes (INSY 8311)  
-- Tutorials and examples discussed in class  
+- Course lecture notes (INSY 8311)
 
----
 
 ## 11. Academic Integrity Declaration
 
 I declare that this project is my own work and was completed in accordance with the academic integrity guidelines of AUCA.
 
----
+
 
 ## 12. Final Note
 
 This project reflects my learning progress in SQL JOINs and Window Functions.  
 All queries were written, tested, and analyzed by me.
 
----
+
