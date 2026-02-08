@@ -113,23 +113,23 @@ The following JOIN types were implemented using the same database schema:
 
 1. **INNER JOIN**  
    Retrieves sales records that have matching customers, medicines, and branches.  
-    ![](screenshots/joins/inner_join.png)  
+    ![](screanshots\joins\inner_join.png)  
 
 2. **LEFT JOIN**  
    Identifies customers who have never made a purchase.  
-    ![](screenshots/joins/left_join.png)  
+    ![](screanshots\joins\left_join.png)  
 
 3. **RIGHT JOIN / FULL JOIN**  
    Detects medicines that have not been sold.  
-    ![](screenshots/joins/left_join.png)  
+    ![](screanshots\joins\join_sales_summary.png)  
 
 4. **FULL OUTER JOIN**  
    Compares customers and medicines including unmatched records.  
-    ![](screenshots/joins/full_outer_join.png)  
+    ![](screanshots\joins\full_outer_join.png)  
 
 5. **SELF JOIN**  
    Compares customers within the same branch or region.  
-    ![](screenshots/joins/self_join.png)  
+    ![](screanshots/joins/self_join.png)  
 
 Each screenshot shows the SQL query and its output although some reduced due to the size of PC.
 
@@ -144,7 +144,7 @@ Functions used:
 - `RANK()`  
 - `DENSE_RANK()`  
 - `PERCENT_RANK()`  
-    ![](screanshots/windows_functions/ranking.png)
+    ![](screanshots\windows_functions\ranking_functions.png)
 Use case: ranking medicines and customers by total sales.
 
 ### 7.2 Aggregate Window Functions
@@ -153,14 +153,14 @@ Functions used:
 - `AVG()`  
 - `MIN()`  
 - `MAX()`  
-    ![](screanshots/windows_functions/aggregate.png)
+    ![](screanshots\windows_functions\aggregate.png)
 Both `ROWS` and `RANGE` frames were applied to calculate running totals and trends.
 
 ### 7.3 Navigation Functions
 Functions used:
 - `LAG()`  
 - `LEAD()`  
-    ![](screanshots/windows_functions/navigation_functions.png`)
+    ![](screanshots\windows_functions\navigation_functions.png)
 Used to analyze month-to-month changes in sales.
 
 ### 7.4 Distribution Functions  
